@@ -3,14 +3,14 @@ fun main() {
     
     if(age <18)
     {
-        println("You are underage , DRIVING IS ILLEGAL FOR YOU")
+        println("You Are Not Eligible For Driving")
     }
     else if(age == 18)
     {
-        println("First Applied for Drving Licsence")
+        println("You Are Eligible For Drving Licsence First")
     }
     else{
-        println("tame driving kari sako chho")
+        println("You Are Eligible For Driving")
     }
 
 }
