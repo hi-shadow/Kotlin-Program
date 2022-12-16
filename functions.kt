@@ -1,40 +1,46 @@
-    // Function With No arguments No Return
-    fun NANR() {
-        println("Hello world")
+// Function : No Argument And No Return
+fun message()
+{
+    println("Hello World")
+}
 
+// Function With Argument With Return
+
+fun sum(num1 : Int , num2 : Int) : Int
+{
+    val result = num1 + num2
+    return  result
+}
+// Function : No Argument With  Return
+
+fun printSt() : String
+{
+    return "Hey ! I m Function With No Argument + return"
+}
+
+// Function : With Argument And No Return
+fun drive(age : Int) 
+{
+    if(age<18)
+    {
+        println("You Are Under Age")
     }
-
-    // Function With No Arguments And Return
-     fun NAWR() : String {
-        return "Hello Sir ! Have A good day!" 
-     }
-
-    // Function With Arguments And No Return
-
-    fun WANR(counter: Int) :  {
-        while (i in 1..counter)
-        {
-            println("Hello $i")
-        }
-    
-        // Function With  Arguments With Return
-
-        fun WAWR(count: Int) : Int{
-            for (i in 1..count)
-            {
-                return i
-            }
-        }
-
+    else if(age==18)
+    {
+        println("First Apply For Driving Licsence")
+    }
+    else{
+        println("You Can Drive")
+}
+}
+// One line Function 
+fun oneline(a : Int , b : Int) : Int = a+b
 fun main() {
 
-
-    
-        // Calling The Functions
-
-        NANR()
-        NAWR()
-        WANR(10)
-        WAWR(10)
+drive(32) // With Argument No Return
+message() // No Argument No Return
+println(sum ( 10 , 20 )) // With Argument With return
+println(printSt())
+println(oneline(100,200))
 
 }
