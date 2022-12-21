@@ -1,4 +1,4 @@
-enum class day (no : Int){
+enum class day (no:Int){
     Sunday(1),
     Monday(2),
     Tuesday(3),
@@ -12,6 +12,6 @@ enum class day (no : Int){
 }
 
 fun main() {
-    var today  = day.Monday
+    var today  = day.Sunday
     today.greet()
 }
